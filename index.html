@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>BBQ Splash Page</title>
+  </head>
+  <body>
+    <div class="flex">
+      <main class="main-container">
+        <p class="top-text orange">mouthwateringly delicious</p>
+
+        <h1 class="title">
+          Learn how to make <strong>the best BBQ ribs</strong> in town
+        </h1>
+        <p class="subtitle orange">join us for this live webinar</p>
+      </main>
+      <aside class="register-container">
+        <h2 class="register-title">Become a BBQ master!</h2>
+        <p class="orange">register today</p>
+        <p>
+          BBQ isn't just standing in front of your grill with it on full blast
+          and hoping for the best. It's an art! One way to speed up the process
+          is to learn from the best. You can do just that by signing up for this
+          free webinar!
+        </p>
+        <div class="form-container">
+          <form
+            id="Email-Collector"
+            class="email-collector"
+            action="#"
+            method="POST"
+          >
+            <input
+              name="firstName"
+              aria-label="name"
+              type="text"
+              placeholder="first name"
+            />
+            <input
+              name="emailAddress"
+              aria-label="email"
+              type="email"
+              placeholder="email"
+            />
+            <button aria-label="submit" type="submit" class="btn btn-primary">
+              register
+            </button>
+          </form>
+          <p class="fine-print">
+            We'll never share your informationwithout your permission
+          </p>
+        </div>
+      </aside>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

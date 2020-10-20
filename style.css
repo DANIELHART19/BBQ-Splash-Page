@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.6;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1rem;
+  color: #404040;
+  text-align: center;
+  margin: 0;
+}
+
+/* LAYOUT */
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #707070;
+  background-image: url(./ribs.jpg);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  padding: 0 0.5em 2em;
+  justify-content: space-between;
+  min-height: 50vh;
+}
+
+.register-container {
+  padding: 2em 1em;
+}
+
+input {
+  font-family: inherit;
+  display: block;
+  margin: 1em auto;
+  padding: 0.55em;
+  border-radius: 10px;
+  border: 1px solid #818181;
+  width: 100%;
+  text-align: center;
+  max-width: 300px;
+  transform: scale(1);
+  transition: transform 0.5s;
+}
+
+input:focus {
+  transform: scale(1.05);
+}
+
+.btn-primary {
+  border: 0;
+  padding: 1em;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  background: transparent linear-gradient(270deg, #ff713b 0%, #ffa51d 100%) 0%
+    0% no-repeat padding-box;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 900;
+  font-size: 0.625rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.5s;
+  transform: scale(1);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  transform: scale(1.05);
+}
+
+.main-container > *,
+.register-container > * {
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* TYPOGRAPHY */
+
+h1 {
+  font-size: 2.25rem;
+  color: #ffffff;
+  font-weight: 400;
+  margin: 0;
+}
+
+h1 + p {
+  font-size: 1.3125rem;
+  margin-top: 0;
+}
+.register-title {
+  color: black;
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.3125rem;
+  margin: 0;
+}
+
+h2 + p {
+  margin-top: 0;
+  color: #f18119;
+  font-weight: 900;
+}
+
+strong {
+  font-weight: 900;
+}
+
+.orange {
+  text-transform: uppercase;
+  color: #f18119;
+  font-weight: 900;
+}
+
+.top-text {
+  justify-self: flex-start;
+  letter-spacing: 1px;
+  font-size: 0.625rem;
+  border-top: 5px solid #f18119;
+  margin-top: 0;
+  padding-top: 2px;
+  border-image: linear-gradient(to left, #ff713b, #ffa51d) 1;
+}
+.fine-print {
+  font-size: 0.625rem;
+  letter-spacing: 1px;
+}
+
+/* MEDIA QUERY */
+
+@media (min-width: 650px) {
+  body {
+    font-size: 1.25rem;
+  }
+  .flex {
+    flex-direction: row;
+  }
+
+  .main-container {
+    width: 60%;
+    min-height: 100vh;
+  }
+
+  .register-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    min-height: 100vh;
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    margin: 2em 0 1em;
+  }
+
+  h2,
+  h1 + p {
+    font-size: 1.75rem;
+  }
+}
